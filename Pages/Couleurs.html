@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Couleurs</title>
+    <link rel="stylesheet" href="../css\style.css">
+  </head>
+      <body>
+        <header>
+          <h1>Couleur</h1>
+        </header>
+
+        <nav>
+          <ul class="dropdownmenu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="APropos.html">À propos</a></li>
+            <li><a href="PlanDuSite.html">Plan du Site</a></li>
+            <li><a href="#">Techniques</a>
+                <ul>
+                  <li><a href="Acrylique.html">Acrylique</a></li>
+                  <li><a href="Encre.html">Encre</a></li>
+                  <li><a href="Couleurs.html">Couleurs</a></li>
+                  <li><a href="Crayon.html">Crayon</a></li>
+                </ul>
+            </li>
+            <li><a href="SitesdInterets.html">Sites d'Intérêts</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Contactez-nous.html">Contactez-nous</a></li>
+            <li class="search_bar">
+                <input type="search" name="q" placeholder="Rechercher">
+            </li>
+          </ul>
+        </nav>
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        p {
+          color: black;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          background-color: white;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -3px;
+        }
+
+        /* Container around content */
+        .container {
+          padding: 10px 40px;
+          position: relative;
+          background-color: inherit;
+          width: 50%;
+        }
+
+        /* The circles on the timeline */
+        .container::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: -17px;
+          background-color: white;
+          border: 4px solid #FDC57B;
+          top: 15px;
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+        /* Place the container to the left */
+        .left {
+          left: 0;
+        }
+
+        /* Place the container to the right */
+        .right {
+          left: 50%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+
+        /* Fix the circle for containers on the right side */
+        .right::after {
+          left: -16px;
+        }
+
+        /* The actual content */
+        .content {
+          padding: 20px 30px;
+          background-color: white;
+          position: relative;
+          border-radius: 6px;
+        }
+
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+          /* Place the timelime to the left */
+          .timeline::after {
+          left: 31px;
+          }
+
+          /* Full-width containers */
+          .container {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+          }
+
+          /* Make sure that all arrows are pointing leftwards */
+          .container::before {
+          left: 60px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+          }
+
+          /* Make sure all circles are at the same spot */
+          .left::after, .right::after {
+          left: 15px;
+          }
+
+          /* Make all right containers behave like the left ones */
+          .right {
+          left: 0%;
+          }
+        }
+        </style>
+
+        <main>
+<article class="">
+  <div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <p>Il s'agit d'une technique sous-estimée car elle est généralement associée aux enfants. Cependant, ce que beaucoup de gens ignorent, c'est qu'elle nécessite une grande préparation.</p>
+      <br>
+      <img src="../Images/Couleur1.jpg" alt="color" style="width:50%">
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <p>Cette technique manipule comme les autres, l'utilisation de divers matériaux tels que des pinceaux pour estomper, des couleurs, du papier ou de la toile, de la térébenthine, et le plus important est le mélange de tous ces éléments.</p>
+      <br>
+      <img src="../Images/Couleur2.jpg" alt="color" style="width:50%">
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <p>Les couleurs peuvent être considérées comme une occasion d'utiliser les matériaux que nous avons à la maison pour essayer de transmettre quelque chose.</p>
+      <br>
+      <img src="../Images/Couleur3.jpg" alt="color" style="width:50%">
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <p>Dans ce cas, les dessins présentés ont été réalisés par l'artiste Nicol Rivera pour transmettre l'identité et le sentiment que des animaux spécifiques ont généré en lui.</p>
+      <br>
+      <img src="../Images/Couleur4.jpg" alt="color" style="width:50%">
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <p>Nous répétons encore une fois que le plus important n'est pas le produit final, l'important est de trouver les moyens de s'exprimer et de laisser les idées et la créativité circuler librement.</p>
+      <br>
+      <img src="../Images/Couleur5.jpg" alt="color" style="width:50%">
+    </div>
+  </div>
+</article>
+        </main>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <footer>
+          <a href="PlanDuSite.html" target="_blank">Plan du site</a> | <a href="Contactez-nous.html" target="_blank">Contactez-nous</a> |
+          <a href="https://www.facebook.com/profile.php?id=100074808430379" class="fa fa-facebook" style="font-size:24px" target="_blank"></a>
+          <a href="https://twitter.com/KarenRi10987584" class="fa fa-twitter" style="font-size:24px" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/karen-rivera-5555ab225" class="fa fa-linkedin" style="font-size:24px" target="_blank"></a>
+
+          <p>Ce site web est supporté par
+            (<a href="https://www.google.com/intl/fr/chrome" target="_blank">Chrome</a>,
+            <a href="https://www.opera.com/fr" target="_blank">Opéra</a>,
+            <a href="https://www.microsoft.com/fr-fr/edge" target="_blank">Edge</a> et
+            <a href="https://www.mozilla.org/fr/firefox/new" target="_blank">FireFox</a>)
+          </p>
+          <p>©Tous droits reversés.</p>
+        </footer>
+  <body>
+
+  </body>
+</html>

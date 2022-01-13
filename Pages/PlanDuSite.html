@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plan du Site</title>
+    <link rel="stylesheet" href="../css\style.css">
+      <body>
+        <header>
+          <h1>Plan du site</h1>
+        </header>
+
+        <nav>
+          <ul class="dropdownmenu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="APropos.html">À propos</a></li>
+            <li><a href="PlanDuSite.html">Plan du Site</a></li>
+            <li><a href="#">Techniques</a>
+                <ul>
+                  <li><a href="Acrylique.html">Acrylique</a></li>
+                  <li><a href="Encre.html">Encre</a></li>
+                  <li><a href="Couleurs.html">Couleurs</a></li>
+                  <li><a href="Crayon.html">Crayon</a></li>
+                </ul>
+            </li>
+            <li><a href="SitesdInterets.html">Sites d'Intérêts</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Contactez-nous.html">Contactez-nous</a></li>
+            <li class="search_bar">
+                <input type="search" name="q" placeholder="Rechercher">
+            </li>
+          </ul>
+        </nav>
+
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+          float: left;
+          background-color: #f1f1f1;
+          width: 30%;
+          height: 300px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 13px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 25px;
+          border: 1px solid #ccc;
+          width: 70%;
+          border-left: none;
+          height: 468px;
+        }
+
+        </style>
+
+        <main>
+<article class="Plan">
+  <h2>Ce que vous trouverez sur notre site web</h2>
+  <br>
+  <br>
+<p>Cliquez sur les boutons à l'intérieur du menu à onglets :</p>
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Accueil')" id="defaultOpen">Accueil</button>
+  <button class="tablinks" onclick="openCity(event, 'Apropos')">À propos</button>
+  <button class="tablinks" onclick="openCity(event, 'Acrylique')">Acrylique</button>
+  <button class="tablinks" onclick="openCity(event, 'Encre')">Encre</button>
+  <button class="tablinks" onclick="openCity(event, 'Couleurs')">Couleurs</button>
+  <button class="tablinks" onclick="openCity(event, 'Crayons')">Crayons</button>
+  <button class="tablinks" onclick="openCity(event, 'SitesdInterets')">Sites d'Intérêts</button>
+  <button class="tablinks" onclick="openCity(event, 'FAQ')">Foire aux questions</button>
+  <button class="tablinks" onclick="openCity(event, 'Contacteznous')">Contactez-nous</button>
+</div>
+
+<div id="Accueil" class="tabcontent">
+  <h3>Accueil</h3>
+    <p>Notre avis de la peinture et le processus artistique, voyez-le en  <a href="../index.html"> cliquant ici</a>
+    <br>
+    <img src="../Images/Plan1.png" alt="home"  width="600" height="400">
+  </p>
+</div>
+
+<div id="Apropos" class="tabcontent">
+  <h3>À propos</h3>
+  <p>À fin de savoir un peu de nous <a href="APropos.html"> cliquer ici</a>
+    <br>
+    <img src="../Images/Plan2.png" alt="apropos"  width="600" height="250">
+  <p>Source: copyright Musée National de Beaux-Arts du Québec</p>
+  </p>
+</div>
+
+<div id="Acrylique" class="tabcontent">
+  <h3>Acrylique</h3>
+  <p>Pour en savoir plus sur cette technique, <a href="Acrylique.html"> consultez ici</a>
+    <br>
+    <img src="../Images/Plan3.png" alt="acrylique"  width="600" height="400">
+  </p>
+</div>
+
+<div id="Encre" class="tabcontent">
+  <h3>Encre</h3>
+  <p>Pour en savoir plus sur cette technique, <a href="Encre.html"> consultez ici</a>
+    <br>
+    <img src="../Images/Plan4.png" alt="encre"  width="600" height="400">
+  </p>
+</div>
+
+<div id="Couleurs" class="tabcontent">
+  <h3>Couleurs</h3>
+  <p>Pour en savoir plus sur cette technique, <a href="Couleurs.html"> consultez ici</a>
+    <br>
+      <img src="../Images/Plan5.png" alt="couleurs"  width="600" height="400">
+  </p>
+</div>
+
+<div id="Crayons" class="tabcontent">
+  <h3>Crayons</h3>
+  <p>Pour en savoir plus sur cette technique, <a href="Crayon.html"> consultez ici</a>
+    <br>
+    <img src="../Images/Plan6.png" alt="crayon"  width="600" height="400">
+  </p>
+</div>
+
+<div id="SitesdInterets" class="tabcontent">
+  <h3>Sites d'Intérêts</h3>
+  <p>Vous pourriez être intéressé par <a href="SitesdInterets.html"> regarder ici</a>
+    <br>
+    <img src="../Images/Plan7.png" alt="sites"  width="600" height="400">
+  </p>
+</div>
+
+<div id="FAQ" class="tabcontent">
+  <h3>Foire aux questions</h3>
+  <p>Vvoir les questions fréquemment posées, <a href="FAQ.html"> cliquez ici</a>
+    <br>
+    <img src="../Images/Plan8.png" alt="faq"  width="600" height="400">
+  </p>
+</div>
+
+<div id="Contacteznous" class="tabcontent">
+  <h3>Contactez-nous</h3>
+  <p>Laissez-nous un message, <a href="Contactez-nous.html"> cliquez ici</a>
+    <br>
+    <img src="../Images/Plan9.png" alt="contactenous"  width="600" height="400">
+  </p>
+</div>
+
+</article>
+
+        </main>
+
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <footer>
+          <a href="PlanDuSite.html" target="_blank">Plan du site</a> | <a href="Contactez-nous.html" target="_blank">Contactez-nous</a> |
+          <a href="https://www.facebook.com/profile.php?id=100074808430379" class="fa fa-facebook" style="font-size:24px" target="_blank"></a>
+          <a href="https://twitter.com/KarenRi10987584" class="fa fa-twitter" style="font-size:24px" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/karen-rivera-5555ab225" class="fa fa-linkedin" style="font-size:24px" target="_blank"></a>
+
+          <p>Ce site web est supporté par
+            (<a href="https://www.google.com/intl/fr/chrome" target="_blank">Chrome</a>,
+            <a href="https://www.opera.com/fr" target="_blank">Opéra</a>,
+            <a href="https://www.microsoft.com/fr-fr/edge" target="_blank">Edge</a> et
+            <a href="https://www.mozilla.org/fr/firefox/new" target="_blank">FireFox</a>)
+          </p>
+          <p>©Tous droits reversés.</p>
+        </footer>
+
+  </body>
+</html>

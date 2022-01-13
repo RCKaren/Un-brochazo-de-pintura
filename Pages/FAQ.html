@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css\style.css">
+      <body>
+        <header>
+          <h1>FAQ</h1>
+        </header>
+
+        <nav>
+          <ul class="dropdownmenu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="APropos.html">À propos</a></li>
+            <li><a href="PlanDuSite.html">Plan du Site</a></li>
+            <li><a href="#">Techniques</a>
+                <ul>
+                  <li><a href="Acrylique.html">Acrylique</a></li>
+                  <li><a href="Encre.html">Encre</a></li>
+                  <li><a href="Couleurs.html">Couleurs</a></li>
+                  <li><a href="Crayon.html">Crayon</a></li>
+                </ul>
+            </li>
+            <li><a href="SitesdInterets.html">Sites d'Intérêts</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Contactez-nous.html">Contactez-nous</a></li>
+            <li class="search_bar">
+                <input type="search" name="q" placeholder="Rechercher">
+            </li>
+          </ul>
+        </nav>
+
+<br>
+<br>
+          <h2>Foire Aux Questions</h2>
+<article>
+  <button class="accordion">Quels sont les meilleurs crayons pour le dessin au graphite ?</button>
+  <div class="panel">
+    <p class="faqcolor">Vous pouvez expérimenter avec toutes les marques possibles, utilisez des crayons 2b pour les esquisses, 4b pour les tons moyens et 9b pour l'obscurité maximale.</p>
+  </div>
+
+  <button class="accordion">Quel papier recommandez-vous pour faire un bon dessin ?</button>
+  <div class="panel">
+    <p class="faqcolor">Il existe de nombreux types de papier, certains de meilleure qualité que d'autres, le grammage est très important surtout si vous travaillez au fusain. Vous pouvez commencer avec du papier Fabriano (finition artistique) ou sur de l'opaline (finition naturelle).</p>
+  </div>
+
+  <button class="accordion">Combien de temps faut-il pour réaliser un portrait ?</button>
+  <div class="panel">
+    <p class="faqcolor">Normalement deux heures pour éviter la fatigue visuelle, mais si vous ne terminez pas le dessin, il est préférable de changer d'activité et d'y revenir plus tard.</p>
+  </div>
+
+  <button class="accordion">Les pinceaux imprégnés de peinture séchée peuvent-ils être récupérés ou doivent-ils être jetés ?</button>
+  <div class="panel">
+    <p class="faqcolor">Vous pouvez utiliser un diluant à peinture pour les récupérer. Laissez les brosses tremper pendant environ une heure, puis lavez-les à l'eau. Ne laissez pas le solvant les recouvrir trop, car la laque de la poignée pourrait se dissoudre. Dans le cas où ils ne sont pas complètement à court de peinture, ils peuvent toujours être utilisés pour créer de nouvelles textures dans les peintures. Ne les jetez pas !</p>
+  </div>
+
+  <button class="accordion">Qu'est-ce que l'harmonie des couleurs et le contraste des couleurs ?</button>
+  <div class="panel">
+    <p class="faqcolor">L'harmonie est le juste équilibre, la proportion et la correspondance entre les différentes choses d'un tout.
+      Si nous le transposons au monde de la couleur, la base de l'harmonie réside dans l'affinité des couleurs.
+      Le contraste est l'opposition ou la différence perceptible. En matière de couleur, le contraste désigne des couleurs aux caractéristiques opposées, qui n'ont rien en commun.</p>
+  </div>
+</article>
+
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+          </script>
+        <main>
+        </main>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <footer>
+          <a href="PlanDuSite.html" target="_blank">Plan du site</a> | <a href="Contactez-nous.html" target="_blank">Contactez-nous</a> |
+          <a href="https://www.facebook.com/profile.php?id=100074808430379" class="fa fa-facebook" style="font-size:24px" target="_blank"></a>
+          <a href="https://twitter.com/KarenRi10987584" class="fa fa-twitter" style="font-size:24px" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/karen-rivera-5555ab225" class="fa fa-linkedin" style="font-size:24px" target="_blank"></a>
+
+          <p>Ce site web est supporté par
+            (<a href="https://www.google.com/intl/fr/chrome" target="_blank">Chrome</a>,
+            <a href="https://www.opera.com/fr" target="_blank">Opéra</a>,
+            <a href="https://www.microsoft.com/fr-fr/edge" target="_blank">Edge</a> et
+            <a href="https://www.mozilla.org/fr/firefox/new" target="_blank">FireFox</a>)
+          </p>
+          <p>©Tous droits reversés.</p>
+        </footer>
+
+  </body>
+</html>
